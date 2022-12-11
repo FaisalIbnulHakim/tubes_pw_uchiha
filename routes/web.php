@@ -21,11 +21,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/', function () {
-    return view('home', [
-        'title' => 'Home'
-    ]);
-});
+
 
 
 
