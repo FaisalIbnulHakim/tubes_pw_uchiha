@@ -11,8 +11,8 @@
   </head>
   <body>
     @include('partial.navbar')
-    <img src="https://img.freepik.com/free-photo/digital-device-eletronic-networking-media_53876-31695.jpg?w=900&t=st=1670398025~exp=1670398625~hmac=17ec9b6fd63cdb55365b58c64c7878a4d4fd416279549b352b2c4bc118d1b41c" alt="" width="" height="" class="d-block w-100">
     
+    @yield('heroimage')
     <div class="container">
    @yield('container')
    </div>

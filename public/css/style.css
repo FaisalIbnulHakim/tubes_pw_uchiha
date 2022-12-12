@@ -1,0 +1,28 @@
+.navbar{
+    color: whitesmoke;
+    z-index: 99;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}    
+h1 {
+    font-size: 10;
+    margin:0;
+    padding: 10;
+    left:200pt;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Sans-serif;
+    color:black;
+}
+.nav-link{
+    color:#454545;
+}
+.navbar-brand{
+    color:#454545;
+}
+
+    
