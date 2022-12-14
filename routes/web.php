@@ -18,4 +18,9 @@ Route::get('/', function () {
         'title' => 'Home'
     ]);
 });
+Route::get('/about', function () {
+    return view('about',[
+        'title' => 'About'
+    ]);
+});
 
