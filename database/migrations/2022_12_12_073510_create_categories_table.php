@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('handphone');
             $table->string('laptop');
-            $table->string('kamera');
+            $table->string('camera');
             $table->timestamps();
         });
     }

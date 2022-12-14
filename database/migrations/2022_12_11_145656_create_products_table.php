@@ -18,9 +18,9 @@ return new class extends Migration
             $table->foreignId('category_id');
             $table->foreignId('user_id');
             $table->string('nama_produk');
-            $table->string('image');
-            $table->text('excerpt');
-            $table->text('body');
+            $table->string('image')->nullable();
+            $table->text('spesifikasi');
+            $table->string('slug')->unique();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
