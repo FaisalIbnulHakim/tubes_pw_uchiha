@@ -15,9 +15,7 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('handphone');
-            $table->string('laptop');
-            $table->string('camera');
+            $table->string('category');
             $table->timestamps();
         });
     }
