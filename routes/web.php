@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\gadgetcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,8 @@ Route::get('/', function () {
         'title' => 'Home'
     ]);
 });
+
+Route::resource('gadget', gadgetcontroller::class);
 
 
 
