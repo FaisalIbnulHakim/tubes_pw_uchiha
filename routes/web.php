@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\gadgetcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +24,5 @@ Route::get('/about', function () {
         'title' => 'About'
     ]);
 });
+Route::resource('gadget', gadgetcontroller::class);
 
