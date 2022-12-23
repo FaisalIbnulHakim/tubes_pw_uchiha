@@ -13,9 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/barang/{id}', [DetailController::class, 'main']);
+
 Route::get('/', function () {
     return view('home', [
         'title' => 'Home'
     ]);
 });
 
+Route::get('/products', [ProductController::class, 'index']);
+
+
+// Route::get('/detail', function () {
+//     $detail = barang::get::detail();
+//     return view('page.detail',[
+//         'title' => $detail['Detail']
+//   ]);
+// });

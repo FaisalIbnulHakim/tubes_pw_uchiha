@@ -1,5 +1,5 @@
 .navbar{
-    color: whitesmoke;
+    color: white;
     z-index: 99;
 }
 
@@ -15,14 +15,12 @@ h1 {
     left:200pt;
     margin-bottom: 0px;
     text-align: center;
-    font-family: Sans-serif;
+    font-family: Courier;
     color:black;
 }
 .nav-link{
-    color:#454545;
+    color:white;
 }
 .navbar-brand{
-    color:#454545;
+    color:white;
 }
-
-    
