@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Uchiha Tech</a>
+      <a class="navbar-brand fw-bold" href="#"><img src="https://o.remove.bg/downloads/802913b1-69fa-4a22-a54c-5bb45e6932ec/WhatsApp_Image_2022-12-23_at_17.32.47-removebg-preview.png" alt="" width="40" height="40"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,10 +10,10 @@
             <a class="nav-link fw-bold {{($title === "Home") ? '' : ''}}" aria-current="page" href="/"><i class="bi bi-house"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold{{($title === "Produk") ? '' : ''}}" href="/Produk"><i class="bi bi-dropbox"></i> Produk</a>
+            <a class="nav-link fw-bold{{($title === "Produk") ? '' : ''}}" href="/Produk"><i class="bi bi-archive"></i> Produk</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold{{($title === "Category") ? '' : ''}}" href="/category"><i class="bi bi-shop-window"></i> Category</a>
+            <a class="nav-link fw-bold{{($title === "Category") ? '' : ''}}" href="/category"><i class="bi bi-columns-gap"></i> Category</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold{{($title === "About") ? '' : ''}}" href="/about"><i class="bi bi-file-earmark-person"></i> About</a>

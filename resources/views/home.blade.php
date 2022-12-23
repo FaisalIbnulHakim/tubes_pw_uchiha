@@ -19,7 +19,8 @@
 </div >
    <div class="position-absolute top-50 start-0 w-100 mx-auto align-middle">
       <h1 class="mb-4 position-absolute text-center w-100 h-100">Welcome to UchihaTech Review</h1>
-      <h2 class="mb-4 position-absolute text-center w-100 h-100">Enjoy Your Exploration</h2>
+      <h2 class="mb-4 position-absolute text-center w-100 h-100 mt-5">Enjoy Your Exploration</h2>
+      <a name="" id="" class="btn btn-success fs-4 position-absolute top-0 start-50 translate-middle center-block" href="/posts" role="button">Open!!!</a>
    </div>
 </div>
 
