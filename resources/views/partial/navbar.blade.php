@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#"><img src="https://o.remove.bg/downloads/802913b1-69fa-4a22-a54c-5bb45e6932ec/WhatsApp_Image_2022-12-23_at_17.32.47-removebg-preview.png" alt="" width="40" height="40"></a>
+      <a class="navbar-brand fw-bold" href="#"><img src="/img/logo.png" alt="" width="40" height="40"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
