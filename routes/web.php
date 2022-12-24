@@ -24,5 +24,12 @@ Route::get('/about', function () {
         'title' => 'About'
     ]);
 });
+
+Route::get('/category', function(){
+    return view('categories', [
+        'title' => 'Category',
+        'active' => 'categories'
+    ]);
+});
 Route::resource('gadget', gadgetcontroller::class);
 
