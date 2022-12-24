@@ -10,7 +10,7 @@ class Product extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
-    protected $with = ['category'];
+    protected $with = ['category', 'author'];
 
     public function scopeFilter($query, array $filters)
     {
@@ -28,7 +28,8 @@ class Product extends Model
         });
     }
 
-    public function category(){
+    public function category()
+    {
         return $this->belongsTo(Category::class, 'category_id');
     }
 
@@ -42,12 +43,12 @@ class Product extends Model
         return 'slug';
     }
 
-    public function sluggable():array
+    public function sluggable(): array
     {
         return [
             'slug' => [
-                'source' => 'title'
-                ]
-            ];
+                'source' => 'nama_produk'
+            ]
+        ];
     }
 }
