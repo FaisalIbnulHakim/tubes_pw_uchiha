@@ -10,44 +10,49 @@
     <main class="container">
        <!-- START FORM -->
        <form action='' method='post'>
-        <div class="my-3 p-3 bg-body rounded shadow-sm">
-            <div class="mb-3 row">
+        <div class="my-3 p-3 bg-secondary rounded shadow-sm">
+            <div class="mb-3 row text-white">
                 <label for="produk" class="col-sm-2 col-form-label">Produk</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name='produk' id="produk">
+                    <select class="form-select" aria-label="default select example">
+                        <option selected> Open This menu</option>
+                        <option value="1">HP</option>
+                        <option value="2">Kamera</option>
+                        <option value="3">Laptop</option>
+                    </select>
                 </div>
             </div>
-            <div class="mb-3 row">
+            <div class="mb-3 row text-white">
                 <label for="brand" class="col-sm-2 col-form-label">Brand</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name='brand' id="brand">
             </div>
             </div>
-            <div class="mb-3 row">
+            <div class="mb-3 row text-white">
                 <label for="harga" class="col-sm-2 col-form-label">Harga</label>
                 <div class="col-sm-10">
                     <input type="number" class="form-control" name='harga' id="harga">
             </div>
             </div>
-            <div class="mb-3 row">
+            <div class="mb-3 row text-white">
                 <label for="tahunrilis" class="col-sm-2 col-form-label">Tahun Rilis</label>
                 <div class="col-sm-10">
                     <input type="number" class="form-control" name='tahunrilis' id="tahunrilis">
             </div>
             </div>
-            <div class="mb-3 row">
+            <div class="mb-3 row text-white">
                 <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
             <div class="col-sm-10">
                     <input type="text" class="form-control" name='deskripsi' id="deskripsi">
             </div>
             </div>
-            <div class="mb-3 row">
+            <div class="mb-3 row text-white">
                 <label for="spesifikasi" class="col-sm-2 col-form-label">Spesifikasi</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name='spesifikasi' id="spesifikasi">
             </div>
             </div>
-            <div class="mb-3 row">
+            <div class="mb-3 row text-white">
                 <label for="tipe" class="col-sm-2 col-form-label">Tipe</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name='tipe' id="tipe">

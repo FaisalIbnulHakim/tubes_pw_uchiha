@@ -23,26 +23,26 @@
     </div>
     </div>
     
-    <div class="row bg-dark text-center">
-    <div class="text-white col-lg-40">
-        <img class="rounded-circle " src="https://img.freepik.com/free-photo/digital-device-eletronic-networking-media_53876-31695.jpg?w=900&amp;t=st=1670398025~exp=1670398625~hmac=17ec9b6fd63cdb55365b58c64c7878a4d4fd416279549b352b2c4bc118d1b41c" width="180" height="180">
+    <div class=" bg-dark d-flex">
+    <div class="text-white col-lg-4">
+        <img class="rounded-circle" src="https://img.freepik.com/free-photo/digital-device-eletronic-networking-media_53876-31695.jpg?w=900&amp;t=st=1670398025~exp=1670398625~hmac=17ec9b6fd63cdb55365b58c64c7878a4d4fd416279549b352b2c4bc118d1b41c" width="180" height="180">
         <h3>Ikhsan</h3>
         <p>Ikhsan Ardiansyah | 203040019 | About</p>
-        </div>
-    <div class="row jutify-content-center">
-        <div class="text-white col-lg-40">
+    </div>
+    <div class="bg-dark d-flex">
+        <div class="text-white col-lg-4">
             <img class="rounded-circle" src="https://img.freepik.com/free-photo/digital-device-eletronic-networking-media_53876-31695.jpg?w=900&amp;t=st=1670398025~exp=1670398625~hmac=17ec9b6fd63cdb55365b58c64c7878a4d4fd416279549b352b2c4bc118d1b41c" width="180" height="180">
             <h3>Ikhsan</h3>
             <p>Ikhsan Ardiansyah | 203040019 | About</p>
         </div>
-    <div class="row jutify-content-center">
-            <div class="text-white col-lg-40">
+    <div class="bg-dark d-flex">
+            <div class="text-white col-lg-4">
                 <img class="rounded-circle" src="https://img.freepik.com/free-photo/digital-device-eletronic-networking-media_53876-31695.jpg?w=900&amp;t=st=1670398025~exp=1670398625~hmac=17ec9b6fd63cdb55365b58c64c7878a4d4fd416279549b352b2c4bc118d1b41c" width="180" height="180">
                 <h3>Ikhsan</h3>
                 <p>Ikhsan Ardiansyah | 203040019 | About</p>
         </div>
-    <div class="row jutify-content-center">
-            <div class="text-white col-lg-40">
+    <div class="bg-dark d-flex">
+            <div class="text-white col-lg-4">
                 <img class="rounded-circle" src="https://img.freepik.com/free-photo/digital-device-eletronic-networking-media_53876-31695.jpg?w=900&amp;t=st=1670398025~exp=1670398625~hmac=17ec9b6fd63cdb55365b58c64c7878a4d4fd416279549b352b2c4bc118d1b41c" width="180" height="180">
                 <h3>Ikhsan</h3>
                 <p>Ikhsan Ardiansyah | 203040019 | About</p>
