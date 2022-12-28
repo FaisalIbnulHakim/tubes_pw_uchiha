@@ -22,7 +22,7 @@ h1 {
     color: black;
 }
 
-h2{
+h2 {
     left: 240pt;
     font-size: 10;
 }
@@ -43,6 +43,71 @@ h2{
     color: #454545;
 }
 
-.btn-success{
-    
+.btn-success {}
+
+h1.title-produk,
+p.no-found {
+    margin-top: 5%;
+}
+
+hr.garis-product {
+    border: 2px solid black;
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/* card produk */
+.card-produk {
+    padding: 1.5em .5em .5em;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.img-produk {
+    width: 80%;
+    border-radius: 10%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.link-produk {
+    text-align: center;
+    margin-bottom: -24px;
+}
+
+.btn-produk {
+    border-radius: 2em;
+}
+
+.carousel-inner {
+    margin-top: 56px;
+}
+
+.title-produk {
+    margin-top: 23px;
+}
+
+p.card-text {
+    margin-bottom: 0;
+}
+
+.btn-produk {
+    background-color: #CACED0;
+    color: #323233;
+    border: 2.5px solid #AAABAD;
+}
+
+.btn.btn-produk:hover {
+    background-color: #505052;
+    color: #E2E2E6;
+    box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* categori */
+    .col-cat {
+        margin-bottom: 20px;
+    }
 }
