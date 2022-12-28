@@ -2,8 +2,10 @@
 
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\gadgetcontroller;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +33,8 @@ Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/category/sp', [CategoryController::class, 'sp']);
 Route::get('/category/lp', [CategoryController::class, 'lp']);
 Route::get('/category/cm', [CategoryController::class, 'cm']);
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
