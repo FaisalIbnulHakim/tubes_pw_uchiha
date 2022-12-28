@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\gadgetcontroller;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\gadgetcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,10 +26,11 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/category', function(){
+Route::get('/category', function () {
     return view('categories', [
         'title' => 'Category',
-        'active' => 'categories'
+        'active' => 'categories',
+        'categories' => Category::all()
     ]);
 });
 Route::resource('gadget', gadgetcontroller::class);

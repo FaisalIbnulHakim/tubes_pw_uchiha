@@ -23,7 +23,8 @@ return new class extends Migration
             $table->string('tahun_rilis');
             $table->text('spesifikasi');
             $table->text('deskripsi');
-            $table->string('slug')->unique();
+            $table->string('excerpt')->unique();
+            $table->string('link');
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
