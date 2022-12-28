@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use Illuminate\Routing\Controller;
+use Illuminate\Foundation\Auth\User;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 
@@ -15,7 +17,18 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $title = '';
+        if (request('author')) {
+            $author = User::firstWhere('name', request('author'));
+            $title = ' by ' . $author->name;
+        }
+        return view('products', [
+            "title" => "Semua Produk Gadget" . $title,
+            "active" => 'products',
+            "foto" => Product::where('category_id', 1)->get('nama_produk'),
+            "products" => Product::latest()->filter(request(['search', 'author']))->paginate(8)->withQueryString()
+            // ->filter(request(['search', 'category', 'author']))
+        ]);
     }
 
     /**
@@ -47,7 +60,11 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('detail', [
+            "title" => "Single Post",
+            "active" => 'product',
+            "products" => $product
+        ]);
     }
 
     /**
