@@ -10,7 +10,7 @@
             <a class="nav-link fw-bold {{($title === "Home") ? '' : ''}}" aria-current="page" href="/"><i class="bi bi-house"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold{{($title === "Produk") ? '' : ''}}" href="/Produk"><i class="bi bi-archive"></i> Produk</a>
+            <a class="nav-link fw-bold{{($title === "Produk") ? '' : ''}}" href="/products"><i class="bi bi-archive"></i> Produk</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold{{($title === "Category") ? '' : ''}}" href="/category"><i class="bi bi-columns-gap"></i> Category</a>
