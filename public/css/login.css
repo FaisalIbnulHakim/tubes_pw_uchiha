@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+.col-page {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 20px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.logo-login {
+  display: block;
+  margin: auto;
+  width: 22%;
+  height: 23%;
+}
+
+.regis-login {
+  display: block;
+  margin: auto;
+  width: 22%;
+  height: 21%;
+}
+
+.form-floating .form-control {
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-floating .form-control:focus {
+  background-color: transparent;
+}
+
+/* .form-floating {
+  transition: none;
+} */
+
+.pemisah {
+  position: relative;
+  text-align: center;
+}
+
+.pemisah:before {
+  content: " ";
+  display: block;
+  width: 130px;
+  height: 1px;
+  background: rgb(161, 155, 155);
+  left: 15%;
+  top: 50%;
+  position: absolute;
+}
+
+.pemisah:after {
+  content: " ";
+  display: block;
+  width: 130px;
+  height: 1px;
+  background: rgb(161, 155, 155);
+  right: 15%;
+  top: 50%;
+  position: absolute;
+}
+
+.input-regis {
+  padding-bottom: 20px;
+}
+
+.input-login {
+  padding-bottom: 20px;
+}
+
+.form-floating input {
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid rgb(161, 155, 155);
+  outline: none;
+}
+
+.form-floating .form-control:focus {
+  border-bottom: 1px solid rgb(161, 155, 155);
+  background-color: #fff;
+  box-shadow: 0 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .pemisah:before {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: rgb(161, 155, 155);
+    left: 15%;
+    top: 50%;
+    position: absolute;
+  }
+
+  .pemisah:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: rgb(161, 155, 155);
+    right: 15%;
+    top: 50%;
+    position: absolute;
+  }
+}
