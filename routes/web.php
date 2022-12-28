@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\gadgetcontroller;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\gadgetcontroller;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,16 +22,12 @@ Route::get('/', function () {
     ]);
 });
 Route::get('/about', function () {
-    return view('about',[
+    return view('about', [
         'title' => 'About'
     ]);
 });
 
-Route::get('/category', function(){
-    return view('categories', [
-        'title' => 'Category',
-        'active' => 'categories'
-    ]);
-});
-Route::resource('gadget', gadgetcontroller::class);
-
+Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/category/sp', [CategoryController::class, 'sp']);
+Route::get('/category/lp', [CategoryController::class, 'lp']);
+Route::get('/category/cm', [CategoryController::class, 'cm']);
