@@ -34,6 +34,12 @@
 
 <h1 class="mb-3 text-center title-produk">{{$title}}</h1>
 <hr class="garis-product">
+<div class="box">
+  <form name="search" action="/products">
+      <input type="text" class="input" name="search" onmouseout="this.value = ''; this.blur();"  value="{{request('search')}}">
+  </form>
+  <i class="bi bi-search"></i>
+</div>
 <div class="container">
   <div class="row">
     @foreach ($products as $product)
