@@ -31,12 +31,14 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/category', [CategoryController::class, 'index']);
-Route::get('/category/sp', [CategoryController::class, 'sp']);
-Route::get('/category/lp', [CategoryController::class, 'lp']);
-Route::get('/category/cm', [CategoryController::class, 'cm']);
-Route::get('/profile', [ProfileController::class, 'index']);
+Route::get('/category', [CategoryController::class, 'index'])->middleware('auth');
+Route::get('/category/sp', [CategoryController::class, 'sp'])->middleware('auth');
+Route::get('/category/lp', [CategoryController::class, 'lp'])->middleware('auth');
+Route::get('/category/cm', [CategoryController::class, 'cm'])->middleware('auth');
+
+Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth');
 Route::get('/products', [ProductController::class, 'index']);
+
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
