@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#"><img src="/img/logo.png" alt="" width="40" height="40"></a>
+      <a class="navbar-brand fw-bold" href="/">UCHIHA<span>TECH</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,13 +10,13 @@
             <a class="nav-link fw-bold {{($title === "Home") ? '' : ''}}" aria-current="page" href="/"><i class="bi bi-house"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold{{($title === "Produk") ? '' : ''}}" href="/products"><i class="bi bi-archive"></i> Produk</a>
+            <a class="nav-link fw-bold{{($title === "Products") ? '' : ''}}" href="/products"><i class="bi bi-archive"></i> Produk</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold{{($title === "Category") ? '' : ''}}" href="/category"><i class="bi bi-columns-gap"></i> Category</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold{{($title === "About") ? '' : ''}}" href="/about"><i class="bi bi-file-earmark-person"></i> About</a>
+            <a class="nav-link fw-bold{{($title === "About") ? '' : ''}}" href="/about"><i class="bi bi-person"></i> About</a>
           </li>
           @auth
           <li class="nav-item dropdown">
@@ -24,8 +24,10 @@
               Welcome back, {{auth()->user()->name}}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-sidebar-reverse"></i>My Dashboard</a></li>
+              @if(auth()->user()->user_type)
+              <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-layout-text-sidebar-reverse"></i> Dashboard Publisher</a></li>
               <li><hr class="dropdown-divider"></li>
+              @endif
               <li>
                 <form action="/logout" method="post">
                   @csrf

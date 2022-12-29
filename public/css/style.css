@@ -39,8 +39,8 @@ h2 {
     color: #454545;
 }
 
-.navbar-brand {
-    color: #454545;
+.navbar-brand span {
+    color: #bdb5a4;
 }
 
 .btn-success {}
@@ -104,14 +104,14 @@ p.card-text {
     box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
 }
 
+.login-page {
+    margin-top: 8%;
+}
+
 @media screen and (max-width: 600px) {
 
     /* categori */
     .col-cat {
         margin-bottom: 20px;
     }
-}
-
-.login-page {
-    margin-top: 8%;
 }
