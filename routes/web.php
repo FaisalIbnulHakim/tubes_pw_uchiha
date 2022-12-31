@@ -44,3 +44,18 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/dashboard', [DashboardProductController::class, 'dash'])->middleware('admin');
+Route::resource('/dashboard/list', DashboardProductController::class)->middleware('admin');
+
+
+Route::post('/dashboard/list/store', [DashboardProductController::class, 'store'])->name('store')->middleware('admin');
+Route::post('/dashboard/list/edit', [DashboardProductController::class, 'update'])->name('update')->middleware('admin');
+Route::post('/dashboard/list/{id}', [DashboardProductController::class, 'destroy'])->name('destroy')->middleware('admin');
+Route::get('/dashboard/list/{id}', [DashboardProductController::class, 'edit'])->name('edit')->middleware('admin');
+
+
+// Route::resource('/dashboard/account', ProfileController::class)->middleware('admin');
+
+Route::get('/dashboard/account/{id}/koreksi', [ProfileController::class, 'koreksi'])->name('koreksi')->middleware('admin');
+Route::post('/dashboard/account/koreksi', [ProfileController::class, 'ubah'])->name('ubah')->middleware('admin');
