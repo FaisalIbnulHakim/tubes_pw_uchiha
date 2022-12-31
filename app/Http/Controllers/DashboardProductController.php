@@ -59,16 +59,16 @@ class DashboardProductController extends Controller
             'category_id' => 'required',
             'harga' => 'required|max:255',
             'tahun_rilis' => 'required|max:10',
-            'spesifikasi' => 'required|max:1024',
-            'deskripsi' => 'required|max:1024',
-            'link' => 'required|max:255'
+            'spesifikasi' => 'required',
+            'deskripsi' => 'required',
+            'link' => 'required'
         ]);
         $validateData['user_id'] = auth()->user()->id;
         $validateData['excerpt'] = Str::limit(strip_tags($request->deskripsi), 200);
 
         Product::create($validateData);
 
-        return redirect('/dashboard/list')->with('success', 'Data Baru Berhasil dibuat!');
+        return redirect('/dashboard/list')->with('success', 'Data Berhasil dibuat!');
     }
 
     /**
@@ -114,9 +114,9 @@ class DashboardProductController extends Controller
             'category_id' => 'required',
             'harga' => 'required|max:255',
             'tahun_rilis' => 'required|max:10',
-            'spesifikasi' => 'required|max:1024',
-            'deskripsi' => 'required|max:1024',
-            'link' => 'required|max:255'
+            'spesifikasi' => 'required',
+            'deskripsi' => 'required',
+            'link' => 'required'
         ]);
         $validateData = $request->validate($rules);
         $validateData['user_id'] = auth()->user()->id;
@@ -125,7 +125,7 @@ class DashboardProductController extends Controller
         $product = Product::where('id', $request->id)
             ->update($validateData);
 
-        return redirect('/dashboard/list')->with('success', 'Post has been updated!');
+        return redirect('/dashboard/list')->with('success', 'Data Berhasil diubah!');
     }
 
     /**
@@ -138,7 +138,7 @@ class DashboardProductController extends Controller
     {
         Product::destroy($id);
 
-        return redirect('/dashboard/list')->with('success', 'Post has been deleted!');
+        return redirect('/dashboard/list')->with('success', 'Data Berhasil dihapus!');
         // return Product::where('id', 13)->get();
         // return Product::where('id', $id)->get();
     }
