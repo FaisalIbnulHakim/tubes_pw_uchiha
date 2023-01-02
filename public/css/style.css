@@ -43,7 +43,10 @@ h2 {
     color: #454545;
 }
 
-.btn-success {}
+.btn-success {
+    margin-left: 300px;
+    margin-top: 120px;
+}
 
 h1.title-produk,
 p.no-found {
