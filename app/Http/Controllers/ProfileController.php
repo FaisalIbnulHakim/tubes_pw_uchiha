@@ -25,4 +25,29 @@ class ProfileController extends Controller
             "products" => Product::latest()->filter(request(['author']))->paginate(8)->withQueryString()
         ]);
     }
+    public function koreksi($id)
+    {
+        $user = User::select('*')->where('id', $id)->get();
+        return view('dashboard.account.koreksi', [
+            'user' => $user
+        ]);
+        // return Product::where('id', $id)->get();
+        // return Category();
+    }
+    public function ubah(Request $request)
+    {
+        $rules = ([
+            'name' => 'required',
+            'email' => 'required|email:dns',
+            'password' => 'required|',
+            'user_type' => 'required',
+            'biodata' => 'required'
+        ]);
+        $validateData = $request->validate($rules);
+
+        $user = User::where('id', $request->id)
+            ->update($validateData);
+
+        return redirect('/dashboard/list')->with('success', 'Profile publisher sudah di ubah');
+    }
 }
