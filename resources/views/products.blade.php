@@ -53,7 +53,7 @@
             <p class="card-text">Tahun Rilis {{$product->tahun_rilis}}</p>
           </div>
           <div class="link-produk">
-            <a href="/detail/" class="btn btn-produk">Detail Produk</a>
+            <a href="/detail/{{$product->id}}" class="btn btn-produk">Detail Produk</a>
           </div>
         </div>
       </div>

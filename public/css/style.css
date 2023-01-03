@@ -118,3 +118,129 @@ p.card-text {
 .login-page {
     margin-top: 8%;
 }
+
+/* detail produk */
+.det-top {
+    margin-top: 6%;
+    font-weight: 700;
+}
+
+.det-nama {
+    font-weight: 700;
+}
+
+article {
+    font-weight: 300;
+}
+
+.img-det {
+    width: 35%;
+    border-radius: 9%;
+    margin: 0 auto;
+    border: 3px outset #595959;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card-det {
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    padding: 17px;
+    margin-top: 16px;
+    font-weight: 700;
+}
+
+.card-det .card-ip {
+    position: relative;
+    display: inline-block;
+    left: 41%;
+    font-weight: 700;
+}
+
+.card-det .card-ip:before {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid black;
+    width: 413px;
+    left: 200px;
+    top: 50%;
+}
+
+.card-det .card-ip:after {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid black;
+    width: 413px;
+    right: 200px;
+    top: 50%;
+}
+
+.card-det .card-sp {
+    position: relative;
+    display: inline-block;
+    left: 36%;
+    font-weight: 700;
+}
+
+.card-det .card-sp:before {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid black;
+    width: 367px;
+    left: 303px;
+    top: 50%;
+}
+
+.card-det .card-sp:after {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid black;
+    width: 367px;
+    right: 303px;
+    top: 50%;
+}
+
+.card-det .card-dp {
+    position: relative;
+    display: inline-block;
+    left: 37%;
+    font-weight: 700;
+}
+
+.card-det .card-dp:before {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid black;
+    width: 380px;
+    left: 278px;
+    top: 50%;
+}
+
+.card-det .card-dp:after {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid black;
+    width: 380px;
+    right: 278px;
+    top: 50%;
+}
+@media screen and (max-width: 1400px) {
+
+    .card-det .card-ip,
+    .card-det .card-sp,
+    .card-det .card-dp {
+        display: block;
+        left: auto;
+    }
+
+    .card-det .card-ip:before,
+    .card-det .card-sp:before,
+    .card-det .card-dp:before {
+        visibility: hidden;
+    }
+
+    .card-det .card-ip:after,
+    .card-det .card-sp:after,
+    .card-det .card-dp:after {
+        visibility: hidden;
+    }
+}
