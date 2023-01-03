@@ -3,7 +3,6 @@
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\gadgetcontroller;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
@@ -31,12 +30,6 @@ Route::get('/about', function () {
         'title' => 'About'
     ]);
 });
-Route::resource('gadget', gadgetcontroller::class);
-Route::get('/detail', function () {
-    return view('detail',[
-        'title' => 'Detail'
-    ]);
-});
 
 Route::get('/category', [CategoryController::class, 'index'])->middleware('auth');
 Route::get('/category/sp', [CategoryController::class, 'sp'])->middleware('auth');
@@ -51,6 +44,8 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/detail/{id}', [ProductController::class, 'detail'])->name('detail')->middleware('auth');
 
 Route::get('/dashboard', [DashboardProductController::class, 'dash'])->middleware('admin');
 Route::resource('/dashboard/list', DashboardProductController::class)->middleware('admin');
