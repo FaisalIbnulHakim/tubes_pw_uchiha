@@ -283,6 +283,42 @@ article {
     top: 50%;
 }
 
+/* about */
+.nama-dev {
+    width: 600px;
+}
+
+/* pagination */
+.active>.page-link,
+.page-link.active {
+    z-index: 3;
+    color: #fff;
+    background-color: #797979;
+    border-color: #1d1d1e00;
+    border-radius: 10px;
+    outline: none;
+}
+
+.page-link:hover {
+    color: #ffffff;
+    background-color: #c1c1c1;
+}
+
+.page-link {
+    color: #bababa;
+    background-color: #1d1d1e00;
+    border-color: #bababa;
+    border-radius: 10px;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 10px;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 1400px) {
 
     .card-det .card-ip,
@@ -326,5 +362,14 @@ article {
 
     .img-det {
         width: 65%;
+    }
+
+    .profile-page,
+    .about-page {
+        margin-top: 18%;
+    }
+
+    .nama-dev {
+        width: auto;
     }
 }

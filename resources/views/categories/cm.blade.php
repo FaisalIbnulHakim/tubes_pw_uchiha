@@ -15,16 +15,16 @@
             <h5 class="card-title">{{$product->nama_produk}}</h5>
             <p>
               <small class="text-muted">
-                Review oleh <a href="/profile?author={{$product->author->name}}" class="text-decoration-none">{{$product->author->name}}</a>
+                Publish oleh <a href="/profile?author={{$product->author->name}}" class="text-decoration-none">{{$product->author->name}}</a>
                 <br>
                 Jenis Produk: {{$product->category->jenis}}
               </small>
             </p>
-            <p class="card-text">Harganya RP. {{$product->harga}}</p>
-            <p class="card-text">Untuk tahun Rilisnya {{$product->tahun_rilis}}</p>
+            <p class="card-text">Harga RP. {{$product->harga}}</p>
+            <p class="card-text">Tahun Rilis {{$product->tahun_rilis}}</p>
           </div>
           <div class="link-produk">
-            <a href="products/{{$product->nama_produk}}" class="btn btn-produk">Detail Produk</a>
+            <a href="/detail/{{$product->id}}" class="btn btn-produk">Detail Produk</a>
           </div>
         </div>
       </div>
