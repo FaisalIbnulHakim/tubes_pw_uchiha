@@ -21,12 +21,12 @@
   
     <main class="form-signin w-100 m-auto">
       <img src="/img/UchihaTech.png" class="logo-login">
-      <h1 class="h3 title mb-3 fw-normal text-center">Login Form</h1>
+      <h1 class="h3 title mb-3 fw-bold text-center">Login Form</h1>
       <form action="/login" method="post">
         @csrf
         <div class="form-floating">
           <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus required value="{{old('email')}}">
-          <label for="email">Email address</label>
+          <label for="email" class="fw-bold">Email address</label>
           @error('email')
           <div class="invalid-feedback">
             {{$message}}
@@ -35,7 +35,7 @@
         </div>
         <div class="form-floating">
           <input type="password" name="password" class="form-control" id="password" placeholder="Password" style="outline: none">
-          <label for="password">Password</label>
+          <label for="password" class="fw-bold">Password</label>
         </div>
         <button class="btn btn-lg tombol-login" style=" background-color: #BDB5A4;border-radius: 26px;width: 45%;text-align: center;margin: auto;display: block;margin-top: 15px;margin-bottom: 7px;color: white;" type="submit">Login</button>
         <h5 class="pemisah text-center">or</h5>

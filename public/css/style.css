@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 .navbar {
     background-color: #E8ecec;
     z-index: 99;
+    font-weight: 700;
 }
 
 body {
@@ -43,6 +44,10 @@ h2 {
     color: #bdb5a4;
 }
 
+.dropdown-item {
+    font-weight: 700;
+}
+
 .btn-success {
     margin-left: 300px;
     margin-top: 120px;
@@ -72,6 +77,10 @@ hr.garis-product {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
+.card-title {
+    font-weight: 700;
+}
+
 .img-produk {
     width: 80%;
     border-radius: 10%;
@@ -86,6 +95,7 @@ hr.garis-product {
 
 .btn-produk {
     border-radius: 2em;
+    font-weight: 700;
 }
 
 .carousel-inner {
@@ -94,6 +104,7 @@ hr.garis-product {
 
 .title-produk {
     margin-top: 23px;
+    font-weight: 700;
 }
 
 p.card-text {
@@ -115,6 +126,18 @@ p.card-text {
 .login-page {
     margin-top: 8%;
 }
+
+/* home */
+.text-nol,
+.text-satu,
+.text-dua,
+.btn-success {
+    position: absolute;
+    font-weight: 700;
+}
+
+
+
 
 /* button search */
 .box {
@@ -171,6 +194,11 @@ p.card-text {
 .card-profile {
     width: 65%;
     margin: auto;
+    margin-top: 7%;
+}
+
+.text-prof {
+    font-weight: 700;
 }
 
 /* detail */
@@ -189,7 +217,7 @@ p.card-text {
 }
 
 article {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .img-det {
@@ -364,12 +392,38 @@ article {
         width: 65%;
     }
 
-    .profile-page,
     .about-page {
         margin-top: 18%;
     }
 
     .nama-dev {
         width: auto;
+    }
+
+    .text-nol {
+        padding: 1.5em .5em .5em;
+        margin: 10px;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+    }
+
+    .text-nol,
+    .text-satu,
+    .text-dua,
+    .btn-success {
+        position: static;
+        margin-top: 10%;
+    }
+
+    .card-profile {
+        width: 95%;
+        margin: auto;
+        margin-top: 20%;
+    }
+
+    .btn-success {
+        margin-left: 50%;
+        margin-top: 20px;
     }
 }

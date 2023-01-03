@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/css/dash.css">
   
-  <title>Dashboard pengguna</title>
+  <title>Dashboard Publisher</title>
 </head>
 <body>
   {{-- SIDEBAR --}}
@@ -18,7 +18,7 @@
       <button id="menuBtn">
         <span class="material-symbols-outlined">menu</span>
       </button>
-      <h1>Dashboard Admin</h1>
+      <h1>Dashboard Publisher</h1>
       <div class="insight">
         {{-- REVIEW --}}
         <div class="review">
@@ -87,7 +87,7 @@
               <td>{{$product->harga}}</td>
               <td class="tahun">{{$product->tahun_rilis}}</td>
               <td>
-                <a href=""><span class="material-symbols-outlined">visibility</span></a>
+                <a href="/detail/{{$product->id}}"><span class="material-symbols-outlined">visibility</span></a>
               </td>
             </tr>
             @endforeach

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/css/dash.css">
+  <title>Dashboard Update Data</title>
 </head>
 <body>
   {{-- SIDEBAR --}}
@@ -16,7 +17,7 @@
         <button id="menuBtn">
           <span class="material-symbols-outlined">menu</span>
         </button>
-        <h1>Tambah Data Baru</h1>
+        <h1>Update Data</h1>
         <div class="setting">
           <div class="account">
             <h2>Data Untuk Produk</h2>
