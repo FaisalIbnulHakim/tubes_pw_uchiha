@@ -29,9 +29,9 @@ Pada UchihaTech terdapat 3 user dimana ada:
 |Detail| ❌ | ✅ | ✅|
 |Dashboard| ❌ |❌| ✅|
 #### Thanks To
-> Mr. Sandika Galih
-> Aditya Fataha Dwijaya
-> Sahid Jafar
-> Asep Moh. Aripin
+- Mr. Sandika Galih
+- Aditya Fataha Dwijaya
+- Sahid Jafar
+- Asep Moh. Aripin
 #### Licences
 © 2022 Uchiha. All rights reserved.
