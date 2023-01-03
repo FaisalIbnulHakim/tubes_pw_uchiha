@@ -80,7 +80,7 @@
         <div class="text-white text-center">
         <br>
         <h3 class="p-0 mr-auto nama-dev">Zaki Auliya Azhari</h3>
-        <p class="p-0">Frontend</p>
+        <p class="p-0">Frontend Developer</p>
         <a class="btn btn-warning" target="_blank" href="https://www.instagram.com/zakiaazhari14/">
         <i class="bi bi-instagram"></i></a>
         <a class="btn btn-dark" target="_blank" href="https://github.com/zakiaazhari14">

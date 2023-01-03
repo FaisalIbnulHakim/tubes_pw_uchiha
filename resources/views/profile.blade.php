@@ -56,7 +56,7 @@ foreach ($foto as $ft) {
       <div class="p-4 p-md-5 mt-4 mb-4 text-white rounded bg-dark">
       <div class="row justify-content-center">
           <div class="col-8 text-center">
-          <h2>Profile Admin</h2>
+          <h2>Profile Publisher</h2>
           <hr class="divider light my-4">
           <h3>{{$name}}</h3>
           <p>{{$biodata}}</p>
@@ -73,7 +73,7 @@ foreach ($foto as $ft) {
 <div class="container">
   <div class="row">
     @foreach ($products as $product)
-      <div class="col-md-3 mb-3 mt-4">
+      <div class="col-md-3 col-8 mx-auto mb-3 mt-4">
         <div class="card card-produk" >
           @if($product->category_id == 1)
             @foreach ($allFoto as $ft)
@@ -88,16 +88,16 @@ foreach ($foto as $ft) {
             <h5 class="card-title">{{$product->nama_produk}}</h5>
             <p>
               <small class="text-muted">
-                Review oleh <a href="/profile?author={{$product->author->name}}" class="text-decoration-none">{{$product->author->name}}</a>
+                Publish oleh <a href="/profile?author={{$product->author->name}}" class="text-decoration-none">{{$product->author->name}}</a>
                 <br>
                 Jenis Produk: {{$product->category->jenis}}
               </small>
             </p>
-            <p class="card-text">Harganya RP. {{$product->harga}}</p>
-            <p class="card-text">Untuk tahun Rilisnya {{$product->tahun_rilis}}</p>
+            <p class="card-text">Harga RP. {{$product->harga}}</p>
+            <p class="card-text">Tahun Rilis {{$product->tahun_rilis}}</p>
           </div>
           <div class="link-produk">
-            <a href="products/{{$product->nama_produk}}" class="btn btn-primary btn-produk">Detail Produk</a>
+            <a href="/detail/{{$product->id}}" class="btn btn-produk">Detail Produk</a>
           </div>
         </div>
       </div>
