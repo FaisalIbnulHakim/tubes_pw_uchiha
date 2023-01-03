@@ -76,7 +76,7 @@
         </div>
         </div>
     <div class="d-lg-flex mx-auto p-4" style="width: 600px">
-        <img class="rounded-circle" src="https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/322583466_3583254418480128_5574907237002729314_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHYCO66ZdTneB9OmEmH1Ff2loX-gc8w9xeWhf6BzzD3F8TqybyUhNZppP_t1lox2Uc4lWMBqG373_Yxznj8Sv8C&_nc_ohc=nwEpEoXgOBUAX9biPUu&_nc_ht=scontent-sin6-1.xx&oh=00_AfAiizew5z89lCIX8dp_apMt2mnxjOlRyTNq346ZUvjDnQ&oe=63B85525" width="180" height="180">
+        <img class="rounded-circle" src="https://o.remove.bg/uploads/8125f157-9fa8-4a73-8f2c-b3a31f3e2cdf/duar.png" width="180" height="180">
         <div class="text-white text-center">
         <br>
         <h3 class="p-0 mr-auto nama-dev">Zaki Auliya Azhari</h3>
