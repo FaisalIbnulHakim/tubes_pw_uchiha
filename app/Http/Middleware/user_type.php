@@ -17,7 +17,7 @@ class user_type
     public function handle(Request $request, Closure $next)
     {
         if (!auth()->check() || !auth()->user()->user_type) {
-            abort(403);
+            return redirect('/');
         }
         return $next($request);
     }

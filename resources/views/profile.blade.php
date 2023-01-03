@@ -52,8 +52,8 @@ foreach ($foto as $ft) {
 </form>
 @if ($products->count())
 <div class="page-section bg-white" id="profile">
-  <div class="container profile-page">
-      <div class="p-4 p-md-5 mt-4 mb-4 text-white rounded bg-dark">
+  <div class="container card-profile">
+      <div class="p-4 p-md-5 text-white rounded bg-dark profile-page">
       <div class="row justify-content-center">
           <div class="col-8 text-center">
           <h2>Profile Publisher</h2>

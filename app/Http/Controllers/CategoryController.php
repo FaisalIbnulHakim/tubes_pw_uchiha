@@ -13,7 +13,7 @@ class CategoryController extends Controller
     {
         $title = '';
         return view('categories.index', [
-            'title' => 'Profile' . $title,
+            'title' => 'Category' . $title,
             'active' => 'products',
             "products" => Product::latest()->paginate(8)->withQueryString()
         ]);
