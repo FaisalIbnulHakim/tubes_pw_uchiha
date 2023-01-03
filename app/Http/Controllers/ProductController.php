@@ -58,11 +58,12 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function detail($id)
     {
+        $product = Product::select('*')->where('id', $id)->get();
         return view('detail', [
-            "title" => "Single Post",
-            "active" => 'product',
+            "title" => "Detail product",
+            "active" => 'products',
             "products" => $product
         ]);
     }
