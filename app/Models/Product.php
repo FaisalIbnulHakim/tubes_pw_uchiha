@@ -20,13 +20,6 @@ class Product extends Model
                     ->orWhere('brand', 'like', '%' . $search . '%');
             });
         });
-
-        $query->when($filters['category'] ?? false, function ($query, $category) {
-            return $query->whereHas('category', function ($query) use ($category) {
-                $query->where('slug', $category);
-            });
-        });
-
         $query->when(
             $filters['author'] ?? false,
             fn ($query, $author) =>
@@ -50,7 +43,7 @@ class Product extends Model
 
     public function getRouteKeyName()
     {
-        return 'slug';
+        return 'nama_produk';
     }
 
     public function sluggable(): array
