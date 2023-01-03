@@ -60,6 +60,11 @@ hr.garis-product {
     border-radius: 5px;
 }
 
+.profile-page,
+.about-page {
+    margin-top: 7%;
+}
+
 /* card produk */
 .card-produk {
     padding: 1.5em .5em .5em;
@@ -161,6 +166,13 @@ p.card-text {
     opacity: 0;
     z-index: -1;
 }
+
+/* profile */
+.card-profile {
+    width: 65%;
+    margin: auto;
+}
+
 /* detail */
 .login-page {
     margin-top: 8%;
@@ -270,6 +282,7 @@ article {
     right: 278px;
     top: 50%;
 }
+
 @media screen and (max-width: 1400px) {
 
     .card-det .card-ip,
@@ -291,6 +304,7 @@ article {
         visibility: hidden;
     }
 }
+
 @media screen and (max-width: 600px) {
     .login-page {
         margin-top: 43%;
@@ -304,5 +318,13 @@ article {
     /* categori */
     .col-cat {
         margin-bottom: 20px;
+    }
+
+    .det-top {
+        margin-top: 10%;
+    }
+
+    .img-det {
+        width: 65%;
     }
 }

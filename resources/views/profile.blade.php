@@ -59,7 +59,7 @@ foreach ($foto as $ft) {
           <h2>Profile Admin</h2>
           <hr class="divider light my-4">
           <h3>{{$name}}</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque non dicta quibusdam nobis sed rerum. Vel id perferendis dolores et quidem accusantium tempore nostrum, nihil voluptas cupiditate! Modi, est.</p>
+          <p>{{$biodata}}</p>
           <text-muted>{{$email}}</text-muted>
           </div>
       </div>

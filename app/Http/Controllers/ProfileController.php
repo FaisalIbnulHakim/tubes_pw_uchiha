@@ -20,6 +20,7 @@ class ProfileController extends Controller
         return view('profile', [
             'title' => 'Profile' . $title,
             'name' => $author->name,
+            'biodata' => $author->biodata,
             'email' => $author->email,
             'active' => 'products',
             "products" => Product::latest()->filter(request(['author']))->paginate(8)->withQueryString()

@@ -1,3 +1,47 @@
+<?php  
+function get_CURL($url)
+{
+  $curl = curl_init();
+  curl_setopt($curl, CURLOPT_URL, $url);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+  $result = curl_exec($curl);
+  curl_close($curl);
+
+  return json_decode($result, true);
+}
+function koneksi()
+{
+  $conn = mysqli_connect("localhost", "root", "");
+  mysqli_select_db($conn, "tubes_pw_uchiha");
+
+  return $conn;
+}
+function query($sql)
+{
+  $conn = koneksi();
+  $result = mysqli_query($conn, "$sql");
+
+  if (mysqli_num_rows($result) == 1) {
+    return mysqli_fetch_assoc($result);
+  }
+  $rows = [];
+  while ($row = mysqli_fetch_assoc($result)) {
+    $rows[] = $row;
+  }
+  return $rows;
+}
+$foto = query("SELECT nama_produk FROM products WHERE category_id = 1");
+$foto = array_column($foto, 'nama_produk');
+$allFoto = [];
+foreach ($foto as $ft) {
+  $myFoto = [];
+  $hasil = get_CURL('https://phone-specs-api.azharimm.dev/search?query=' . $ft);
+  $myFoto['foto'] = $hasil['data']['phones'][0]['image'];
+  $myFoto['nama'] = $ft;
+
+  $allFoto[] = $myFoto;
+}
+?>
 @include('layouts.main')
 @foreach($products as $product)
 <div class="container mt-4 main"> 
